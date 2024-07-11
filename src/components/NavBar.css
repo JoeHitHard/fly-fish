@@ -15,12 +15,37 @@
     -webkit-box-shadow: -3px 0 15px 0 #555;
     box-shadow:         -3px 0 15px 0 #555;
     z-index: 100;
+    text-transform: uppercase;
   }
   /* @media (max-width: 768px) {
     .sidebar {
         display: none;
     }
   } */
+  .sidebar h1 {
+    text-transform: none;
+
+  }
+  img {
+    -webkit-animation: jump 2s infinite  alternate;
+    animation: jump 2s infinite  alternate;
+  }
+  @-webkit-keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 
   .sidebar-logo {
     height: 10vmin;

@@ -18,7 +18,7 @@ const Sidebar = () => {
         <li><h4><Icons.MdHome /><Link to="/">  Home</Link></h4></li>
         <li><h4><Fa6Icons.FaFish /><Link to="/terrariums">  Terrariums</Link></h4></li>
         <li><h4><FaIcons.FaTshirt /><Link to="/apparel">  Apparel</Link></h4></li>
-        <li><h4><GiHoodedFigure /><Link to="/figures">  Figures</Link></h4></li>
+        <li><h4><GiHoodedFigure /><Link to="/figures">  figurines</Link></h4></li>
         <li><h4><FaIcons.FaPaintBrush /><Link to="/paintings">  Paintings</Link></h4></li>
         <li><h4><TbHomeEco /><Link to="/interior">  Interior</Link></h4></li>
         <li><h4><TbHomeEco /><Link to="/interior">  Contact Us</Link></h4></li>
