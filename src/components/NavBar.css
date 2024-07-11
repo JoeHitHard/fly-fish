@@ -14,6 +14,7 @@
     -moz-box-shadow:    -3px 0 15px 0 #555;
     -webkit-box-shadow: -3px 0 15px 0 #555;
     box-shadow:         -3px 0 15px 0 #555;
+    z-index: 100;
   }
   /* @media (max-width: 768px) {
     .sidebar {

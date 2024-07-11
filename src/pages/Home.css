@@ -1,4 +1,5 @@
-.home-container {
+.home-title, .home-button {
+    z-index: 1;
 }
 
 .header {
@@ -16,8 +17,8 @@
     justify-content: center;
     align-items: center;
 }
-.home-button {
-    
+.home-container {
+    padding-top: 70px;
 }
 .myVideo {
     position: fixed;

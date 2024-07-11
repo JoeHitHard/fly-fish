@@ -5,7 +5,7 @@ import bg from '../content/body-bg.mp4';
 
 function Home() {
   return (
-    <div className='home-container'>
+    <div className='home-container' id='home'>
       <div className='header'>
         <video className='myVideo' autoPlay loop muted>
             <source src={bg} type='video/mp4' />

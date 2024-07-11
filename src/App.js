@@ -8,38 +8,22 @@ import Interior from './pages/Interior';
 import Paintings from './pages/Paintings';
 import Terrariums from './pages/Terrariums';
 import './App.css'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { MdOutlineShoppingCartCheckout } from "react-icons/md";
-
+import Main from './components/Main';
 
 const App = () => {
   return (
     <div className="App">
-      <Box className='topbar' sx={{ flexGrow: 1 }}>
-      <AppBar sx={{ bgcolor: "black" }}position="static">
-        <Toolbar color="black">
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            fLY fISH
-          </Typography>
-          <Button color="inherit"><MdOutlineShoppingCartCheckout /> Check out</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
       <Router>
       <div>
         <NavBar  />
         <div className="content">
           <Routes>
-            <Route path="/" exact element={<Home/>} />
-            <Route path="/apparel" element={<Apparel/>} />
-            <Route path="/figures" element={<Figures/>} />
-            <Route path="/interior" element={<Interior/>} />
-            <Route path="/paintings" element={<Paintings/>} />
-            <Route path="/terrariums" element={<Terrariums/>} />
+            <Route path="/" exact element={<Main Component={Home}/>} />
+            <Route path="/apparel" element={<Main Component={Apparel}/>} />
+            <Route path="/figures" element={<Main Component={Figures}/>} />
+            <Route path="/interior" element={<Main Component={Interior}/>} />
+            <Route path="/paintings" element={<Main Component={Paintings}/>} />
+            <Route path="/terrariums" element={<Main Component={Terrariums}/>} />
           </Routes>
         </div>
       </div>
