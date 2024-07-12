@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <ul>
         <img className='sidebar-logo' src={'/logo/logo.png'} alt="Logo" />
-        <h1>fLI fISH</h1>
+        <h1>fLY fISH</h1>
         <li><h4><Icons.MdHome /><Link to="/">  Home</Link></h4></li>
         <li><h4><Fa6Icons.FaFish /><Link to="/terrariums">  Terrariums</Link></h4></li>
         <li><h4><FaIcons.FaTshirt /><Link to="/apparel">  Apparel</Link></h4></li>

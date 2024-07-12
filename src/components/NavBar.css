@@ -27,10 +27,10 @@
 
   }
   .sidebar-logo {
-    -webkit-animation: jump 2s infinite  alternate;
-    animation: jump 2s infinite  alternate;
+    -webkit-animation: fly 2s infinite  alternate;
+    animation: fly 2s infinite  alternate;
   }
-  @-webkit-keyframes jump {
+  @-webkit-keyframes fly {
     0%, 100% {
       transform: translateY(0);
     }
@@ -38,7 +38,7 @@
       transform: translateY(-20px);
     }
   }
-  @keyframes jump {
+  @keyframes fly {
     0%, 100% {
       transform: translateY(0);
     }
