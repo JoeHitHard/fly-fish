@@ -1,4 +1,5 @@
 .navbar {
+    background-color: transparent !important;
     top: 0;
     width: 100%;
     display: flex;
