@@ -60,7 +60,7 @@ function Terrariums() {
         <h1>Terrariums</h1>
         <button className="title-info-button" onClick={handleToggleInfo}>
           More Info
-        </button>
+        </button> 
       </div>
       {showInfo && (
         <div className="title-info-message">
