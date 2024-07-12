@@ -1,86 +1,72 @@
-import React from 'react'
+import React, { useState } from 'react';
 import ProductCard from '../components/ProductCard';
-import ProductImg from '../content/logo.png';
 import '../components/Products.css';
 
 function Terrariums() {
+  const [showInfo, setShowInfo] = useState(false);
+
   const products = [
     {
       id: 1,
-      image: ProductImg,
+      image: '/terrariums/terra1.jpg',
       price: '100.00',
       discountPrice: '75.00',
-      description: 'This is a short description of product 1.',
+      description: '',
     },
     {
       id: 2,
-      image: ProductImg,
+      image: '/terrariums/terra2.png',
       price: '200.00',
       discountPrice: '150.00',
-      description: 'This is a short description of product 2.',
+      description: '',
     },
     {
       id: 3,
-      image: ProductImg,
+      image: '/terrariums/terra3.png',
       price: '300.00',
       discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
+      description: '',
     },
     {
-      id: 3,
-      image: ProductImg,
+      id: 4,
+      image: '/terrariums/terra4.png',
       price: '300.00',
       discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
+      description: '',
     },
     {
-      id: 3,
-      image: ProductImg,
+      id: 5,
+      image: '/terrariums/terra5.png',
       price: '300.00',
       discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
+      description: '',
     },
     {
-      id: 3,
-      image: ProductImg,
+      id: 6,
+      image: '/terrariums/terra6.png',
       price: '300.00',
       discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
-    },
-    {
-      id: 3,
-      image: ProductImg,
-      price: '300.00',
-      discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
-    },
-    {
-      id: 3,
-      image: ProductImg,
-      price: '300.00',
-      discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
-    },
-    {
-      id: 3,
-      image: ProductImg,
-      price: '300.00',
-      discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
-    },
-    {
-      id: 3,
-      image: ProductImg,
-      price: '300.00',
-      discountPrice: '225.00',
-      description: 'This is a short description of product 3.',
-    },
-    // Add more products as needed
+      description: '',
+    }
   ];
+
+  const handleToggleInfo = () => {
+    setShowInfo(!showInfo);
+  };
 
   return (
     <div className="product-container">
-      <h1>Terrariums</h1>
+      <div className="product-title">
+        <h1>Terrariums</h1>
+        <button className="title-info-button" onClick={handleToggleInfo}>
+          More Info
+        </button>
+      </div>
+      {showInfo && (
+        <div className="title-info-message">
+          <p>Terrariums are miniature gardens housed inside small containers. They can be entirely enclosed or open to the atmosphere. They are a perfect way to bring greenery into small spaces and are low maintenance.</p>
+        </div>
+      )}
       <div className="product-list">
         {products.map((product) => (
           <ProductCard
@@ -96,4 +82,4 @@ function Terrariums() {
   );
 }
 
-export default Terrariums
+export default Terrariums;

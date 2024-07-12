@@ -24,8 +24,8 @@ const ProductCard = ({ image, price, discountPrice, description }) => {
       <div className="product-info">
         <p className="product-description">{description}</p>
         <p className="product-price">
-          <span className="original-price">${price}</span>
-          <span className="discount-price">${discountPrice}</span>
+          <span className="original-price">₹{price}</span>
+          <span className="discount-price">₹{discountPrice}</span>
         </p>
         {count === 0 ? (
           <button className="add-to-cart-button" onClick={handleAddToCart}>

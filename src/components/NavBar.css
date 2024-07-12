@@ -26,7 +26,7 @@
     text-transform: none;
 
   }
-  img {
+  .sidebar-logo {
     -webkit-animation: jump 2s infinite  alternate;
     animation: jump 2s infinite  alternate;
   }
@@ -69,4 +69,31 @@
     margin-left: 220px; /* Adjust based on sidebar width */
     padding: 20px;
   }
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
   
+    .sidebar ul {
+      overflow: auto;
+      display: flex;
+      flex-direction: row;
+    }
+    .sidebar-logo {
+      display: none;
+    }
+  
+    .sidebar h1 {
+      display: none;
+    }
+    .sidebar h4 {
+      font-size: small;
+      margin: 10px;
+    }
+    .content {
+      margin-top: 100px;
+      margin-left: 0px; /* Adjust based on sidebar width */
+    }
+
+  }
